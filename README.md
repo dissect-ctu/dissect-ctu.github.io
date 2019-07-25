@@ -1,2 +1,3 @@
-# dissect-ctu.github.io
+# dissect.eu
+
 Github pages for DISsecT@CTU
