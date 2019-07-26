@@ -1,0 +1,25 @@
+<head>
+    {% if site.google_analytics %}
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+        </script>
+    {% endif %}
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="googlebot" content="snippet,archive">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="DISsecT team">
+    <!--<title>{{ site.title }}</title>-->
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% seo %}
+    <!-- Favicon-->
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
+    <!-- CSS-->
+</head>
