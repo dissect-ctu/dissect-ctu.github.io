@@ -1,33 +1,35 @@
 # Dependencies
-markdown:         kramdown
+markdown: kramdown
 kramdown:
   input: GFM
-  
-highlighter:      pygments
+
+highlighter: pygments
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-title:            DISsecT
-tagline:          'A Jekyll theme'
-description:      'Hacking Team at Czech Technical University. Patronaeged by Department of Information Security at Faculty of Information Technology'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title: DISsecT
+tagline: "CTU Hacking team"
+description: "Hacking Team at Czech Technical University. Patronaeged by Department of Information Security at Faculty of Information Technology"
+url: https://dissect.eu
+baseurl: /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name: "DISsecT team"
 
-paginate:         5
+paginate: 5
 
 # Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+version: 2.1.0
 
 plugins:
-        - jekyll-paginate
-        - jekyll-gist
-        - redcarpet
+  - jekyll-paginate
+  # - jekyll-gist
+  # - redcarpet
+
+# https://github.com/github/pages-gem/issues/399
+github: [metadata]
+
+# Separator of post overview displayed on home page, default is first paragraph
+excerpt_separator: "<!--more-->"
