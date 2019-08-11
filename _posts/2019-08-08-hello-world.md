@@ -7,7 +7,7 @@ author: ordbl0ke
 
 ## First post
 
-Hi `everyone!` This is the very first blogpost at our DISsecT pages!
+Hi **everyone!** This is the very first blogpost at our DISsecT pages!
 
 Right after setting the whole pages up.
 

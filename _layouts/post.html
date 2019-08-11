@@ -1,17 +1,20 @@
 ---
 layout: default
 ---
+
 {% assign author = site.data.members[page.author] %}
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
   <hr>
-<div class="post-authored-by">
-  This blogpost was written by <a href="https://github.com/{{ author.github }}"><span class="value">{{ author.username }}</span></a>
-  <br/>
-  <span class="label">name: </span> <span class="value"> {{ author.name }} </span> <br/>
-  <span class="label">about me: </span> <span class="value"> {{ author.description }} </span> <br/>
-  <span class="label">personal github: </span> <span class="value"> <a href="https://github.com/{{ author.github }}">{{ author.github }}</a> </span> <br/>
+  <div class="post-authored-by">
+    This blogpost was written by <a href="https://github.com/{{ author.github }}"><span
+        class="value">{{ author.username }}</span></a>
+    <br />
+    <span class="label">name: </span> <span class="value"> {{ author.name }} </span> <br />
+    <span class="label">about me: </span> <span class="value"> {{ author.description }} </span> <br />
+    <span class="label">personal github: </span> <span class="value"> <a
+        href="https://github.com/{{ author.github }}">{{ author.github }}</a> </span> <br />
   </div>
 </div>

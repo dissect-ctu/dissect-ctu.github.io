@@ -1,7 +1,7 @@
 # Dependencies
 markdown: kramdown
 kramdown:
-  input: GFM
+    input: GFM
 
 highlighter: pygments
 
@@ -16,17 +16,12 @@ url: https://dissect.eu
 baseurl: /
 
 author:
-  name: "DISsecT team"
+    name: "DISsecT team"
 
 paginate: 5
 
-# Custom vars
-version: 2.1.0
-
 plugins:
-  - jekyll-paginate
-  # - jekyll-gist
-  # - redcarpet
+    - jekyll-paginate
 
 # https://github.com/github/pages-gem/issues/399
 github: [metadata]
