@@ -19,7 +19,6 @@ Last week, we participated in Redpwn CTF...
 
 <!--more-->
 
-
 The first ever Redpwn CTF produced interesting challenges and we surely had fun and learned new things.
 Big amount of solvers and dynamic scores significantly degraded some challenges over time (e.g. challenge with 102/926 solves was worth the same amount of points as survey).
 

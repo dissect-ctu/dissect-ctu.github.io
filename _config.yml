@@ -28,3 +28,11 @@ github: [metadata]
 
 # Separator of post overview displayed on home page, default is first paragraph
 excerpt_separator: "<!--more-->"
+
+exclude:
+    - CNAME
+    - docker-compose.yml
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE.md
+    - README.md
