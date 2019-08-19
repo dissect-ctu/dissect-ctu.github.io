@@ -1,0 +1,14 @@
+<!-- TODO: block link does not work - I wrapped the whole block into a to make it clickable, but doesnt' work  -->
+<a class="post-mini-wrapper" href="{{ post.url}}">
+  <div class="post-mini">
+    <h3>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h3>
+    <div class="post-metadata">
+      <span class="post-date"> <i class="icon-calendar"></i> {{ post.date | date_to_string }}</span>
+      <span class="post-author"> <i class="icon-user"></i> {{ post.author }}</span>
+    </div>        
+  </div>
+</a>
