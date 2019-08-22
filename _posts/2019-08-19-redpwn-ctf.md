@@ -3,6 +3,7 @@ layout: post
 title: Redpwn CTF 2019
 date: 2019-08-19 11:11:11
 author: ordbl0ke
+tags: [ctf, summary, redpwn, 2019]
 ---
 
 ### CTF Info
