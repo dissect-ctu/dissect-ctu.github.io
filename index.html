@@ -5,21 +5,39 @@ title: Home
 
 logo
 
-<h2>Recent Posts: </h2>
-
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
+    <a href="{{ post.url }}">
+      <article class="post">
 
-    {% include post_header.html %}
+        <header>
+          <h3>{{ post.title }}</h3>
+          <div class="post-metadata">
+            <span class="post-date"> <i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</span>
+            <span class="post-author"> <i class="fa fa-user"></i> {{ post.author }}</span>
+          </div>
+          {% if post.tags %} <!-- TODO tags icon keeps showing even when no tags defined (Hello World post) -->
+            <div class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+              {% for tag in post.tags %}
+                <span class="post-label">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </header>
+        
+        <a class="preview-toggle" href="#preview-{{ post.id | replace: '/', '' }}">preview</a>
 
-    {{ post.excerpt }}
-    <div class="post-footer">
-      <i class="icon-ellipsis-vertical"></i>
-      <hr />
-      <a href="{{ post.url }}">click here to read more...</a>
-    </div>
-  </div>
+        <section id="preview-{{ post.id | replace: '/', '' }}" class="post-preview">
+          {{ post.excerpt }}
+          <footer class="post-footer">
+            <i class="icon-ellipsis-vertical"></i>
+            <hr />
+            <a href="{{ post.url }}">read more</a>
+          </footer>
+        </section>
+      </article>
+    </a>
   {% endfor %}
 </div>
 

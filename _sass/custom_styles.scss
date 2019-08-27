@@ -1,4 +1,42 @@
 // Write styles changing default Hyde appearance here
+
+body {
+  font-size: 16px;
+  hr { margin: 7px 0; }
+
+  .content {
+    .posts {
+      .post {
+        transition: transform .3s;
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0px 0px 15px 2px #9e9e9e;
+        //   text-decoration: none;
+        }
+        box-shadow: 0px 0px 10px 1px #9e9e9e;
+        border-radius: 15px;
+        padding: 10px 25px 25px;
+        margin: 25px 0;
+        header {
+          margin-top: -15px;
+          .post-metadata {
+            span {
+              display: inline-block;
+              padding: 0 10px;
+            }
+          }
+        }
+        .preview-toggle {
+          float: right;
+          padding-right: 10px;
+        }
+        .post-preview { display: none; }
+        .post-preview.is-visible { display: block; }
+      }
+    }
+  }
+}
+
 .post-authored-by {
     font-size: 16px;
 }
@@ -30,61 +68,4 @@
     padding: 1px 3px;
     margin-right: 4px;
     font-weight: 700;
-}
-
-.post {
-    box-shadow: 0px 0px 10px 1px #9e9e9e;
-    padding: 20px;
-}
-
-.post-mini {
-    transition: transform .3s;
-    
-    &:hover {
-      transform: scale(1.03);
-    }
-}
-
-.post-mini-wrapper:hover {
-    text-decoration: none;
-}
-
-.post-mini {
-    box-shadow: 0px 0px 10px 1px #9e9e9e;
-    border-radius: 15px;
-    padding: 10px 25px;
-    margin: 20px 0;
-}
-
-.post-mini:hover {
-    box-shadow: 0px 0px 15px 2px #9e9e9e;
-}
-
-.post-mini h3 {
-    margin-top: .5rem;
-}
-
-.post-preview {
-    display: none;
-}
-.post-preview.is-visible {
-    display: block;
-}
-
-.preview-toggle {
-    float: right;
-    padding-right: 10px;
-}
-
-.post-metadata div {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-body {
-    font-size: 16px;
-}
-
-hr {
-    margin: 7px 0;
 }

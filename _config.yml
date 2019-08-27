@@ -18,7 +18,7 @@ baseurl: /
 author:
     name: "DISsecT team"
 
-paginate: 5
+paginate: 10
 
 plugins:
     - jekyll-paginate
