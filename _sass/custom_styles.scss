@@ -32,6 +32,9 @@ body {
         }
         .post-preview { display: none; }
         .post-preview.is-visible { display: block; }
+        a:hover {
+          text-decoration: none; 
+        }
       }
     }
   }
