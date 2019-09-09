@@ -9,13 +9,9 @@ layout: default
   {% include post_header.html %}
   {{ content }}
   <hr>
-  <div class="post-authored-by">
-    This blogpost was written by <a href="https://github.com/{{ author.github }}"><span
-        class="value"> <i class="icon-user"></i> {{ author.username }}</span></a>
-    <br />
-    <span class="post-authored-by-label">name: </span> <span class="value"> {{ author.name }} </span> <br />
-    <span class="post-authored-by-label">about me: </span> <span class="value"> {{ author.description }} </span> <br />
-    <span class="post-authored-by-label">personal github: </span> <span class="value"> <a
-        href="https://github.com/{{ author.github }}">{{ author.github }}</a> </span> <br />
-  </div>
+  This blogpost was written by <a href="https://github.com/{{ author.github }}"><span
+    class="value"> <i class="icon-user"></i> {{ author.username }}</span></a> <br />
+  {% assign member = author %}
+  {% include member_pane.html %}
+  
 </div>
