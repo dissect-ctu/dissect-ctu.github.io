@@ -1,23 +1,17 @@
 ---
-layout: default
-title: Home
+layout: page
+title: Blog
 ---
 
-<h2>Home</h2>
-<p>
-  Hello and welcome to DISsecT <a href="https://ctfs.github.io/resources/">CTF</a> team pages. <br/>
-  These pages serve to present our news, announcements and write-ups for ctf challenges. <br/>
-  You can find all of our write-ups in dedicated github <a href="https://github.com/dissect-ctu/ctfs"> <i class="fa fa-github"></i> repository</a>. <br/>
-</p>
-<img class="logo" src="/assets/images/logo.png"/>
-
-<h2>Recent Blog Posts</h2>
+{% comment %}
+  This file needs in `/blog/index.html`, not just `/blog.html`. The reason is that pagination works only on `index.html` file.
+{% endcomment %}
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <a href="{{ post.url }}">
-      <article class="post">
+    <article class="post anim-scale">
 
+      <a href="{{ post.url }}">
         <header>
           <h3>{{ post.title }}</h3>
           <div class="post-metadata">
@@ -33,19 +27,25 @@ title: Home
             </div>
           {% endif %}
         </header>
+      </a>
         
-        <a class="preview-toggle" href="#preview-{{ post.id | replace: '/', '' }}">preview</a>
+      <a href="#preview-{{ post.id | replace: '/', '' }}" class="preview-toggle">
+        <div>
+          <i class="fa fa-arrow-circle-down"></i>
+        </div>
+      </a>
+        
 
-        <section id="preview-{{ post.id | replace: '/', '' }}" class="post-preview">
-          {{ post.excerpt }}
-          <footer class="post-footer">
-            <i class="icon-ellipsis-vertical"></i>
-            <hr />
-            <a href="{{ post.url }}">read more</a>
-          </footer>
-        </section>
-      </article>
-    </a>
+      <section id="preview-{{ post.id | replace: '/', '' }}" class="post-preview">
+        {{ post.excerpt }}
+        <footer class="post-footer">
+          <i class="icon-ellipsis-vertical"></i>
+          <hr />
+          <a href="{{ post.url }}"><i class="fa fa-book"></i> full article</a>
+        </footer>
+      </section>
+    </article>
+    
   {% endfor %}
 </div>
 
