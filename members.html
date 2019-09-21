@@ -6,23 +6,7 @@ title: Members
 <div class="members">
 
   {% for member in site.data.members %}
-    <div id="{{ member.username }}" class="member">
-
-      {% if member.avatar %}
-        <img src="/assets/images/avatars/{{ member.avatar }}" />
-      {% else %}
-        <img src="/assets/images/default-avatar.png" />
-      {% endif %}
-            
-      <div class="info">
-        <h3>{{ member.name }}</h3>
-        <span>username:</span> <span>{{ member.username }}</span> <br/>
-        <span>about me:</span> <span>{{ member.description }}</span> <br/>
-        <span>my github page:</span> <a href="https://github.com/{{ member.github }}">{{ member.github }}</a>
-      </div>
-      
-    </div>
-    <hr/>
+    {%include member_pane.html %}
   {% endfor %}
 
 </div>

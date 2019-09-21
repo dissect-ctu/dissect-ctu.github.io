@@ -10,8 +10,7 @@ layout: default
   {% include post_header.html %}
   {{ content }}
   <hr>
-  <p>This blogpost was written by <a href="{% link members.html %}#{{ author.username }}">
-    <span class="value"><i class="fa fa-user"></i> {{ author.username }}</span></a>
-  </p>
+  {% assign member = author %}
+  {% include member_pane.html %}
   <br />
 </div>
