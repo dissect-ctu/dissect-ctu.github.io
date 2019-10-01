@@ -1,0 +1,21 @@
+- name: Jakub Acs
+  username: ordbl0ke
+  github: acsjakub
+  description: curious, optimistic, mainly into binary exploitation, forensics and crypto, enrolled in CTU Computer Security Master's programme
+  avatar: ordbl0ke.jpg
+
+- name: Tomáš Stefan
+  username: gorei
+  github: tstdin
+  description: <a href="https://ts.stdin.cz/">link</a>
+  avatar: groot.jpg
+
+- name: Ivana Trummová
+  username: ivanivlee
+  github: ivanivlee
+  description: mathematician at heart (focused on algebraic geometry & cryptography), slowly getting to know what cyber security is all about 
+
+- name: Samuel Hanák
+  username: hrdel 
+  github: hrdel
+  description: former web developer, currently a websec noob. CTU FIT is life!

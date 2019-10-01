@@ -1,0 +1,30 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    
+    <div class="sidebar-about">
+      <a href="{{ site.baseurl }}"><img src="/assets/images/logo-white.png"></a>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme (of Hyde theme) for usage.
+      {% endcomment %}
+
+      {% for node in site.pages %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <div class="social">
+      <a href="https://github.com/dissect-ctu/ctfs" title="GitHub"><i class="fa fa-github"></i></a>
+      <a href="https://twitter.com/DissectC" title="Twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+---
+layout: page
+title: Members
+---
+
+<div class="members">
+
+  {% for member in site.data.members %}
+    {%include member_board.html %}
+  {% endfor %}
+
+</div>
