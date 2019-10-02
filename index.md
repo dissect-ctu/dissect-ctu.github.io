@@ -13,7 +13,7 @@ At these pages you can find announcements, news and blog posts covering various 
 
 A history on participated competitions can also be found on [CTFtime page](https://ctftime.org/team/80103).
 
-Thanks for reading!
+Thanks for reading! 
 
 ---
 
