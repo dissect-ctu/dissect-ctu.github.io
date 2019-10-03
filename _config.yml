@@ -13,7 +13,7 @@ title: DISsecT
 tagline: "CTU Hacking team"
 description: "Hacking Team at Czech Technical University. Patronaged by Department of Information Security at Faculty of Information Technology."
 url: https://dissect.eu
-baseurl: /
+baseurl: ""
 
 author:
     name: "DISsecT team"
