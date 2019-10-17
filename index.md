@@ -15,7 +15,7 @@ The primary purpose of **DISsecT** is to participate in CTF competitions and lea
 
 ### How to reach us
 
-If you wish to leave us a message, please use our [twitter](https://https://twitter.com/DissectC) profile.
+If you wish to leave us a message, please use our [twitter](https://twitter.com/DissectC) profile.
 To gather all of our write-ups and data about how we did in CTF competitions, we decided to maintain a [GitHub repository](https://github.com/dissect-ctu/ctfs).
 A history on participated competitions can also be found on [CTFtime page](https://ctftime.org/team/80103).
 
