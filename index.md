@@ -7,7 +7,7 @@ title: Home
 
 ### Who we are
 
-[**DIS**](https://www.fit.cvut.cz/en/dis) **sec**urity **T**eam was set up over the summer of 2019 by students who desired to participate in Capture The Flag ([CTF](https://medium.com/@DRX_Sicher/ctf-explained-6c7d4417305e)) competitions together. Current **DISsecT** members are all enrolled in the Computer Security study programme at [**DIS**](https://www.fit.cvut.cz/en/dis), and thus we operate at the soil of this Department.
+[**DIS**](https://www.fit.cvut.cz/en/dis) **sec**urity **T**eam was set up over the summer of 2019 by students who desired to participate in Capture The Flag ([CTF](https://medium.com/@DRX_Sicher/ctf-explained-6c7d4417305e)) competitions together. Current **DISsecT** members are all enrolled in the Computer Security study programme at [**DIS**](https://www.fit.cvut.cz/en/dis)(Department of Information Security at FIT CTU), and thus we operate at the soil of this Department.
 
 ### What we do
 
